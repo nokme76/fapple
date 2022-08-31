@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple (대한민국)</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- 파비콘 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- 폰트 -->
+  <link rel="stylesheet prefetch"
+    href="https://gist.githubusercontent.com/mfd/614e2e80a22b878bde63cb471cbe677e/raw/eef2aabfd0d588d43285431186a0cf70305ceb80/sanfrancisco-font.css">
+  <style>
+    html,
+    body {
+      font-family: 'SF PRO', sans-serif;
+      word-break: keep-all;
+    }
+
+    a:link {
+      text-decoration: none;
+
+
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+
+    .nav-item {
+      font-size: 0.7em;
+    }
+
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+
+    }
+
+    .nav-link {
+      padding: .5em;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+
+    }
+
+    #nav-apple {
+      background-size: 14px 44px;
+      background-repeat: no-repeat;
+      background-image: url(/image/apple.svg);
+      background-position: center center;
+      text-indent: -9999px;
+      width: 14px;
+    }
+
+    #nav-sear {
+      background-size: 17px;
+      background-repeat: no-repeat;
+      background-image: url(/image/search.svg);
+      background-position: 5px -61px;
+      text-indent: -9999px;
+      width: 17px;
+
+    }
+
+    #nav-sear:hover {
+      background-size: 17px;
+      background-repeat: no-repeat;
+      background-image: url(/image/search.svg);
+      background-position: 5px -10px;
+      text-indent: -9999px;
+      width: 17px;
+
+    }
+
+    #nav-shop {
+      background-size: 13px 44px;
+      background-repeat: no-repeat;
+      background-image: url(/image/shopping.svg);
+      background-position: center center;
+      text-indent: -9999px;
+      width: 13px;
+    }
+
+    #shopbar {
+      font-size: 12px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+
+
+    #ip13 {
+      background-size: cover;
+      background-position: center;
+      height: 692px;
+    }
+
+    #ip13pro {
+      background-size: cover;
+      background-position: center;
+      height: 736px;
+    }
+
+    #ip13wat {
+      background-size: cover;
+      background-position: center;
+      height: 736px;
+    }
+
+    #event {
+      background-size: cover;
+      background-position: center;
+      height: 624px;
+    }
+
+    label {
+      font-size: px !important;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0em;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
+
+    .footer_ul {
+
+      font-size: 11px;
+    }
+
+    /* Bounce 애니메이션 */
+    @keyframes fadeup {
+      0% {
+        opacity: 0;
+        transform: translateY(50%);
+      }
+
+      25% {
+        opacity: 0;
+        transform: translateY(40%);
+      }
+
+      50% {
+        opacity: 0;
+        transform: translateY(30%);
+      }
+
+      70% {
+        opacity: 0;
+        transform: translateY(10%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .up-letter {
+      animation: fadeup 0.8s forwards;
+    }
+
+    .dropdown-menu {
+
+      position: relative;
+      right: 320px;
+      left: 1280px !important;
+      border-radius: 30px;
+    }
+
+    .dropdown-img {
+
+      width: 25px;
+      height: 25px;
+      margin-right: 6px;
+    }
+
+    .dropdown-item {
+
+      color: #06c;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 10px;
+      background-color: transparent !important;
+    }
+
+    .dropdown-hr {
+
+      margin: 0px;
+    }
+  </style>
+</head>
+
+<body class="pt-5 ">
+
+
+
+  <!-- 네브바 -->
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="m_nav">
+    <div class="container-fluid ">
+
+      <!-- 접었을때 생기는 버튼 -->
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- 네비 리스트 -->
+      <div class="collapse navbar-collapse  justify-content-center  " id="navBar">
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item">
+            <a href="https://www.apple.com/kr/" class="nav-link" id="nav-apple">apple</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="text-decoration-line: none">스토어</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="text-decoration-line: none">Mac</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="text-decoration-line: none">iPad</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="text-decoration-line: none">iPhone</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="text-decoration-line: none">Watch</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="text-decoration-line: none">AirPods</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="text-decoration-line: none">TV 및 홈</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="text-decoration-line: none">Apple 독점 제공</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="text-decoration-line: none">액세서리</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="text-decoration-line: none">고객지원</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="nav-sear">search</a>
+          </li>
+          <li class="nav-item">
+            <a href="nav-shop" class="nav-link dropdown-toggle" id="nav-shop" data-bs-toggle="dropdown"
+              aria-expanded="false">shopping</a>
+
+            <!-- 드롭다운 메뉴 -->
+            <ul class="dropdown-menu" aria-labelledby="nav-shop">
+              <p class="text-center" style="padding:30px ; font-size: 13px;">장바구니가 비어있습니다.</p>
+              <hr class="dropdown-hr">
+              <li><a class="dropdown-item" href="#"><img class="dropdown-img" src="/image/bag.svg">장바구니</a></li>
+              <hr class="dropdown-hr">
+              <li><a class="dropdown-item" href="#"><img class="dropdown-img" src="image/savedbyyou.svg" alt=""> 저장된
+                  항목</a></li>
+              <hr class="dropdown-hr">
+              <li><a class="dropdown-item" href="#"><img class="dropdown-img" src="image/orders.svg" alt=""> 주문</a></li>
+              <hr class="dropdown-hr">
+              <li><a class="dropdown-item" href="#"><img class="dropdown-img" src="image/account.svg" alt=""> 계정</a>
+              </li>
+              <hr class="dropdown-hr">
+              <li><a class="dropdown-item" href="#"><img class="dropdown-img" src="image/signIn.svg" alt=""> 로그인</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container-fluid  d-flex justify-content-center text-center" id="shopbar"
+    style="background-color:#fbfbfd ;">
+    <span class="fw-bold" style="letter-spacing:-0.5px ; color:  #6e6e73;"><a href="#">온라인으로 쇼핑</a>
+      하고 무료 배송, 스페셜리스트 지원 등의 혜택을 받으세요.</span>
+
+  </div>
+
+
+
+
+  <!-- 홈 섹션 -->
+  <section id="home">
+
+    <div class="d-flex flex-column">
+      <!-- 아이폰 13 -->
+      <div class=" col-xl-12 container-fluid" style="background-image:url(image/iphone1.jpg) ; cursor: pointer; "
+        onclick="location.href='#'" id="ip13">
+        <!-- 텍스트 -->
+        <div class="d-flex flex-column  align-items-center" id="txt13">
+          <h1 class="fw-bolder display-4 mt-5 pt-3">iPhone 13</h1>
+          <h4 class=" mb-2" style="letter-spacing : -1.8px">일상을 위한 비상한 능력.</h4>
+          <div class="d-flex flex-row fw-bolder ">
+            <a href="#" class="mx-4">더 알아보기 ></a>
+            <a href="#" class="mx-4">구입하기 ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 아이폰 13 프로 -->
+      <div class=" col-xl-12 " style="background-image:url(image/iphone2.jpg) ; cursor: pointer;"
+        onclick="location.href='#'" id="ip13pro">
+        <!-- 텍스트 -->
+        <div class="d-flex flex-column align-items-center " id="txt13">
+          <h1 class="fw-bolder display-4 mt-5 pt-3 ">iPhone 13 Pro</h1>
+          <h4 class=" mb-2" style="letter-spacing : -1.8px">이게 바로 프로.</h4>
+          <div class="d-flex flex-row fw-bolder ">
+            <a href="#" class="mx-4">더 알아보기 ></a>
+            <a href="#" class="mx-4">구입하기 ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 애플 와치 -->
+      <div class=" col-xl-12 " style="background-image:url(image/watch.jpg) ; cursor: pointer;"
+        onclick="location.href='#'" id="ip13wat">
+        <!-- 텍스트 -->
+        <div class="d-flex flex-column align-items-center" id="txt13">
+          <h1 class=" fs-1 mt-5 pt-3 fw-bolder" style="margin-bottom:0 ;"><img src="image/Apple_logo_black.svg"
+              style="width: 30px; margin-bottom: 15px;"> WATCH</h1>
+          <p class="fw-bolder fs-5 text-danger" style="letter-spacing: 2px; ">SERIES 7</p>
+          <h4 class=" mb-2" style="letter-spacing : -1.8px">이제껏 가장 큰 디스플레이 탑재.</h4>
+          <div class="d-flex flex-row fw-bolder">
+            <a href="#" class="mx-4">더 알아보기 ></a>
+            <a href="#" class="mx-4">구입하기 ></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- 이벤트 섹션 -->
+  <section id="event" class="container-fluid" style="height: 100% ;">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 애플 이벤트 -->
+        <div class=" col-xl-6 col-md-6 d-flex justify-content-center align-items-end border border-5 border-white"
+          style="background-image:url(image/apple_L_1.jpg) ; cursor: pointer;" onclick="location.href='#'" id="event">
+          <!-- 텍스트 -->
+          <div class="d-flex flex-column  text-light align-items-center" id="txt13">
+            <h1 class="fw-bolder fs-1 ">Apple 이벤트</h1>
+            <h4 class=" mb-2 fs-5" style="letter-spacing : -1.8px">9월 8일 새벽2시, 온라인 생중계.</h4>
+            <div class="d-flex flex-row fw-bolder ">
+              <a href="#" class="mb-5">더 알아보기 ></a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- bite  -->
+        <div class="col-xl-6 col-md-6 border border-5 border-white"
+          style="background-image:url(image/apple_R_1.jpg); cursor: pointer;" onclick="location.href='#'" id="event">
+          <!-- 텍스트 -->
+          <div class="d-flex flex-column align-items-center " id="txt13">
+            <h3 class="fw-bolder text-light mt-5 pt-3 fs-5 ">박재범의 신곡 'bite' 뮤직비디오</h3>
+            <img src="image/R1img.png" class="container" style="max-width: 430px; height: 107px;">
+            <div class="d-flex flex-row fw-bolder " style="margin-top: 300px;" id="bite_link">
+              <a href="#" class="mx-4" style="color: white ;">메이킹 필름 보기 <img src="/image/circle-play-regular.svg"
+                  style="width: 17px;" alt=""></a>
+              <a href="#" class="mx-4" style="color: white ;">iPad 활용법 살펴보기 ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ipad air -->
+        <div class=" col-xl-6 col-md-6 border border-5 border-white"
+          style="background-image:url(image/apple_L_2.jpg) ; cursor: pointer;" onclick="location.href='#'" id="event">
+          <!-- 텍스트 -->
+          <div class="d-flex flex-column align-items-center" style="margin-top: 80px;" id="txt13">
+            <img src="image/L2img.png" style="width: 150px;">
+            <p class="fw-bolder fs-5 text-light ">가뿐하게. 색다르게. 강력하게.</p>
+            <div class="d-flex flex-row fw-bolder">
+              <a href="#" class="mx-4">더 알아보기 ></a>
+              <a href="#" class="mx-4">구입하기 ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- macbook air -->
+        <div class=" col-xl-6 col-md-6 border border-5 border-white"
+          style="background-image:url(image/apple_R_2.jpg); cursor: pointer;" onclick="location.href='#'" id="event">
+          <!-- 텍스트 -->
+          <div class="d-flex flex-column align-items-center" id="txt13">
+            <h1 class="fw-bolder display-5 mt-5 pt-3 ">MacBook Air</h1>
+            <img src="image/R2img.png" style="height: 31px ;">
+            <div class="d-flex flex-row pt-2 fw-bolder">
+              <a href="#" class="mx-4">더 알아보기 ></a>
+              <a href="#" class="mx-4">구입하기 ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- macbook pro -->
+        <div class=" col-xl-6 col-md-6  border border-5 border-white"
+          style="background-image:url(image/apple_L_3.jpg); cursor: pointer;" onclick="location.href='#'" id="event">
+          <!-- 텍스트 -->
+          <div class="d-flex flex-column align-items-center" id="txt13">
+            <h1 class="fw-bolder fs-1 mt-5 pt-3 text-light" style="margin-bottom:0 ;">MacBook Pro 13</h1>
+            <img src="image/m2chip.png" style="height: 50px; margin-top: 0;">
+            <div class="d-flex flex-row fw-bolder">
+              <a href="#" class="mx-4">더 알아보기 ></a>
+              <a href="#" class="mx-4">구입하기 ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- new ipad -->
+        <div class=" col-xl-6 col-md-6 d-flex justify-content-center align-items-end border border-5 border-white"
+          style="background-image:url(image/apple_R_3.jpg) ; cursor: pointer;" onclick="location.href='#'" id="event">
+          <!-- 텍스트 -->
+          <div class="d-flex flex-column align-items-center" id="txt13">
+            <p class="fw-bold m-0">새로워진</p>
+            <p class="fw-bolder fs-1 m-0">iPad </p>
+            <h5 class=" mb-2" style="letter-spacing : -1.8px">매사를 더욱 쉽게.</h5>
+            <div class="d-flex flex-row fw-bolder mb-5">
+              <a href="#" class="mx-4">더 알아보기 ></a>
+              <a href="#" class="mx-4">구입하기 ></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 캐러셀 섹션 -->
+
+  <section id="crs" class="bg-dark py-5 container-fluid">
+    <div class="container-">
+      <div id="aptv" class="carousel slide" data-bs-ride="carousel">
+        <!-- 캐러셀 인디케이터 -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#aptv" data-bs-slide-to="10" aria-label="Slide 11"></button>
+        </div>
+        <!-- 슬라이드 표시 부분 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href=""><img src="image/cs1.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                드라마 &#183
+                4개의 세대. 하나의 운명.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="image/cs2.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                드라마 &#183
+                감옥에서 벗어나는 단 하나의 방법, 살인자의 과거를 밝혀라!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="image/cs3.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                애니메이션 &#183
+                때로는 모든 게 꼬일수록 운수대통</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="image/cs4.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                코미디 &#183
+                코미디 시리즈 작품상 포함 애미상® 20개 부문 노미네이트</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="image/cs5.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                스릴러 &#183
+                드라마 시리즈 작품상 포함 애미상® 14개 부문 노미네이트</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="image/cs6.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                스릴러 &#183
+                진실은 죽은 자의 기억 속에 있다
+              <p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="image/cs7.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                스릴러 &#183
+                MI5 루저들의 바닥 인생 탈출기</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="image/cs8.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                드라마 &#183
+                470억 달러짜리 러브 스토리</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="image/cs9.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                SF &#183
+                인간다움을 향한 도전</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="image/cs10.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                어드벤처 &#183
+                뜻밖의 구성원으로 이루어진 가족을 위해 집을 찾아 나선 톰 행크스의 위험한 여정.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="image/cs11.jpg" class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block" style="text-align:left ;">
+
+              <p class="fw-bold up-letter"> <button class="btn btn-light rounded-pill fw-bold"
+                  style="font-size:15px; height:45px ; margin-right: 30px;">지금
+                  시청하기<img src="/image/circle-play-solid.svg" style="width: 19px; margin-left: 5px;"></button>
+                드라마 &#183
+                새로운 시즌
+              <p>
+            </div>
+          </div>
+
+        </div>
+        <!-- 컨트롤버튼 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#aptv" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#aptv" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- 푸터 섹션 -->
+
+  <footer class="container-fluid col-xl-12 " style=" background-color: #f5f5f7 ;">
+    <div class="container pt-3" style="width: fit-content;">
+      <!-- 푸터 네비 -->
+      <nav class="footer_nav d-flex justify-content-center">
+        <!-- 1열 -->
+        <div class="direction_column_shop" style="margin-right: 95px ;">
+
+          <label class="">
+            <h6><strong>쇼핑 및 알아보기</strong></h6>
+          </label>
+          <ul class="footer_ul">
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">스토어</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Mac</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">iPad</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">iPhone</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Watch</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">AirPods</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">TV 및 홈</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">AirTag</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">액세서리</li>
+            </a>
+          </ul>
+        </div>
+        <!-- 2열 -->
+        <div class="direction_column" style="margin-right: 95px ;">
+
+          <label class="">
+            <h6><strong>서비스</strong></h6>
+          </label>
+          <ul class="footer_ul">
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple Music</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple TV+</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple Arcade</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">iCloud</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple Books</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple Podcast</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">App Store</li>
+            </a>
+          </ul>
+
+          <label class="">
+            <h6><strong>계정</strong></h6>
+            <ul class="footer_ul">
+              <a href="#" style="color: #6e6e73;">
+                <li class="pb-2">Apple ID관리</li>
+              </a>
+              <a href="#" style="color: #6e6e73;">
+                <li class="pb-2">Apple Store 계정</li>
+              </a>
+              <a href="#" style="color: #6e6e73;">
+                <li class="pb-2">iCloud.com</li>
+              </a>
+            </ul>
+          </label>
+
+        </div>
+        <!-- 3열 -->
+        <div class="direction_column" style="margin-right: 95px ;">
+          <label class="">
+            <h6><strong>Apple Store</strong></h6>
+          </label>
+          <ul class="footer_ul">
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">매장 찾기</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Genius Bar</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Today at Apple</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple 캠프</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple Store 앱</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">리퍼 및 특가 제폼</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">금융 혜택</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple Trade In</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">주문 상태</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">쇼핑 도움말</li>
+            </a>
+          </ul>
+        </div>
+        <!-- 4열 -->
+        <div class="direction_column" style="margin-right: 95px ;">
+
+          <label class="">
+            <h6><strong>비즈니스</strong></h6>
+          </label>
+          <ul class="footer_ul">
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple과 비즈니스</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">비즈니스를 위한 제품 쇼핑하기</li>
+            </a>
+          </ul>
+
+          <label class="">
+            <h6><strong>교육</strong></h6>
+          </label>
+          <ul class="footer_ul">
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple과 교육</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">초중고용 제품 쇼핑하기</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">대학 생활을 위한 제품 쇼핑하기</li>
+            </a>
+          </ul>
+        </div>
+        <!-- 5열 -->
+        <div class="direction_column" style="margin-right: 95px ;">
+
+          <label class="">
+            <h6><strong>Apple의 가치관</strong></h6>
+          </label>
+          <ul class="footer_ul">
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">손쉬운 사용</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">환경</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">개인정보 보호</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">협력업체에 대한 책임</li>
+            </a>
+          </ul>
+
+          <label class="">
+            <h6><strong>Apple 정보</strong></h6>
+          </label>
+          <ul class="footer_ul">
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Newsroom</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple 리더쉽</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">채용 안내</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">윤리 및 규정 준수</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">이벤트</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">일자리 창출</li>
+            </a>
+            <a href="#" style="color: #6e6e73;">
+              <li class="pb-2">Apple 연락처</li>
+            </a>
+          </ul>
+        </div>
+
+      </nav>
+
+      <div class="container  text-left  ">
+        <p class="mb-0" style="font-size: 0.7em ; color: #6e6e73;">다양한 쇼핑 방법: <a href="#">Apple Store를 방문</a> 하거나,<a
+            href="#">리셀러</a> 를
+          찾아보거나,
+          080-330-8877번으로 전화하세요.
+        </p>
+        <hr style="margin: 10px ; padding: auto;">
+        <div class="d-flex " style="font-size: 0.6em ; color: #6e6e73;">
+          <p style="margin-right: 30px; margin-bottom: 5px;">
+            Copyright © 2022 Apple Inc. 모든 권리 보유.</p>
+          <div>
+            <a href="#" class="text-dark"
+              style="margin-right: 10px; padding-right: 10px; border-right: 1px solid #d2d2d7 ;">개인정보
+              처리방침</a>
+            <a href="#" class="text-dark"
+              style="margin-right: 10px;padding-right: 10px; border-right: 1px solid #d2d2d7;">웹 사이트
+              이용 약관</a>
+            <a href="#" class="text-dark"
+              style="margin-right: 10px;padding-right: 10px; border-right: 1px solid #d2d2d7;">판매 및
+              환불</a>
+            <a href="#" class="text-dark"
+              style="margin-right: 10px;padding-right: 10px; border-right: 1px solid #d2d2d7;">법적
+              고지</a>
+            <a href="#" class="text-dark" style="margin-right: 10px;">사이트 맵</a>
+          </div>
+          <a href="#" style="margin-left:auto ; color: #6e6e73;">대한민국</a>
+        </div>
+        <p style="font-size: xx-small; color: #6e6e73;">
+          사업자등록번호 : 120-81-84429 | 통신판매업신고번호 : 제 2011-서울강남-00810호 | 대표이사 : PETER DENWOOD | 주소 : 서울 특별시 강남구 영동대로 517 |
+          대표전화 : 02-6712-6700 | 팩스 : 02-6928-0000</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
